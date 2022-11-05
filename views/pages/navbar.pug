@@ -1,0 +1,30 @@
+header
+   .header_navbar
+    nav.navbar.navbar-expand-lg
+        .container
+            a.navbar-brand(href='https://www.meliboyevdev.uz/') MeliboyevDev
+            button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+                span.navbar-toggler-icon
+            #navbarSupportedContent.collapse.navbar-collapse
+                ul.navbar-nav.ms-auto.mb-2.mb-lg-0
+                    li.nav-item
+                        a.nav-link(href='#') 
+                            i.fa-light.fa-house
+                            | #{l.home}
+                    li.nav-item
+                        a.nav-link(href='#') #{l.about}
+                    li.nav-item
+                        a.nav-link(href='#') #{l.projects}
+                    li.nav-item
+                        a.nav-link(href='#') #{l.resume}
+                    li.nav-item.dropdown
+                        a.nav-link.dropdown-toggle.language(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false')
+                            i.fa-regular.fa-globe
+                            | #{l.selectLanguage}
+                        ul.dropdown-menu
+                            if lang == "ru"
+                                li
+                                    a.dropdown-item(href='?lang=en') en
+                            else 
+                                li
+                                    a.dropdown-item(href='?lang=ru') ru

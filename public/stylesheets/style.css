@@ -1,0 +1,138 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* # */
+body{
+  background: #020a18 !important;
+  color: white !important;
+  font-family: 'Open Sans', sans-serif !important;
+}
+
+/* ============== HEADER START ============== */
+
+
+header .header_navbar {
+  position: fixed;
+  width: 100%;
+}
+header .header_navbar nav .navbar-brand {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24.5455px;
+  line-height: 31px;
+  color: #3A68B8;
+  transition: 500ms;
+}
+header .header_navbar nav .navbar-brand:hover{
+  color: #597bb4;
+}
+header .header_navbar nav .collapse .navbar-nav .nav-item {
+  margin-left: 20px;
+}
+header .header_navbar nav .collapse .navbar-nav .nav-item .nav-link {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+header .header_navbar nav .collapse .navbar-nav .dropdown .language{
+  font-size: 14px;
+}
+header .header_navbar nav .collapse .navbar-nav .dropdown .language i{
+  margin-right: 5px;
+  font-size: 14px;
+}
+header .header_navbar nav .collapse .navbar-nav .dropdown .dropdown-toggle::after{
+  border: 0;
+}
+
+
+header .header_navbar nav .collapse .navbar-nav .dropdown .dropdown-menu {
+  min-width: 0 !important;
+  padding: 0 !important;
+  --bs-dropdown-border-radius: 0; 
+  --bs-dropdown-border-width: 0;
+  --bs-dropdown-inner-border-radius: 0 !important; 
+  border-radius: 10px;
+  transition: 500ms;
+}
+
+.navbar-nav .nav-item a::after {
+  content: "";
+  position: relative;
+  display: block;
+  height: 5px;
+  width: 0;
+  border-radius: 16px;
+  background: #3A68B8;
+  bottom: 1px;
+  left: 0;
+  z-index: -1;
+  transition: all 0.3s ease-out 0s;
+  margin-top: 5px;
+}
+
+.navbar-nav .nav-item a:hover::after {
+  width: 100%;
+}
+
+header .header_navbar nav .collapse .navbar-nav .dropdown .dropdown-menu:hover {
+  border-radius: 10px !important;
+  --bs-dropdown-link-hover-bg: #fff !important;
+  border-radius: 10px;
+}
+
+header .header_navbar nav .collapse .navbar-nav .dropdown .dropdown-menu:hover .dropdown-item {
+  border-radius: 10px;
+  background:#3A68B8;
+  color: white;
+}
+
+.wave {
+  animation-name: wave-animation;
+  animation-duration: 2.1s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+  margin-top: 1500px;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+
+
+
+
+
+
+/* ///////// */
+
+
