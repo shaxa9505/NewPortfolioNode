@@ -1,5 +1,14 @@
 extends layout
 
 block content
+    .header_about
+        .container
+            .row.justify-content-between
+                .col-lg-4.offset-lg-1
+                    .header_about.home.d-flex
+                        h1.me-4 #{l.hello} 
+                        span.wave 👋🏻
+                    p #{l.name}
 
-  
+                .col-lg-5
+                    img(src="/images/IMAGE_2022-11-06_2210_12_47_ПП-removebg.png")
